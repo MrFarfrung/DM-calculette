@@ -1,0 +1,52 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+.grid-main{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    grid-template-areas: 
+    "modification nombre opperateur";
+
+    grid-template-columns: 300px 100px;
+    grid-template-rows: 250px 400px;
+}
+
+.grid-modification{
+    grid-area: modification ;
+}
+
+.grid-modification{
+    display: grid;
+    grid-auto-columns: 200px;
+}
+
+.grid-nombre{
+    grid-area: nombre ;
+}
+
+.grid-nombre{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+}
+
+.grid-opperateur{
+    grid-area: opperateur ;
+}
+
+.grid-opperateur{
+    display: grid;
+}
+
+.grid-main div {
+    cursor: pointer;
+    font-size: 3rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(0, 0, 0, .75);
+  }
